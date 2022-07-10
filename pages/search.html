@@ -14,19 +14,18 @@
 
     <form action="https://tests.fomenko.top/echo/index.php">
         <div>
-            <select name="Тип кузова">
-                <option value="">Тип кузова</option>
-                <option value="универсал">универсал</option>
-                <option value="седан">седан</option>
-                <option value="купе">купе</option>
-                <option value="хетчбек">хетчбек</option>
-                <option value="кабриолет">кабриолет</option>
+            <label for="type">Тип кузова</label>
+            <select id="type" name="type">
+                <option value="sedan">седан</option>
+                <option value="coupe">купе</option>
+                <option value="hatchback">хетчбек</option>
+                <option value="cabriolet">кабриолет</option>
             </select>
         </div>
         <hr>
         <div>
-            <select name="Марка авто">
-                <option value="">Марка авто</option>
+            <label for="carb">Марка авто</label>
+            <select id="carb" name="carb">
                 <option value="porshe">porshe</option>
                 <option value="fiat">fiat</option>
                 <option value="bmv">bmv</option>
@@ -36,79 +35,130 @@
         </div>
         <hr>
         <div>
-            <select name="Страна производитель">
-                <option value="">Страна производитель</option>
-                <option value="украина">украина</option>
-                <option value="польша">польша</option>
-                <option value="америка">америка</option>
-                <option value="германия">германия</option>
-                <option value="франция">франция</option>
+            <label for="country">Страна производитель</label>
+            <select id="country" name="country">
+                <option value="ukraine">украина</option>
+                <option value="poland">польша</option>
+                <option value="america">америка</option>
+                <option value="germany">германия</option>
+                <option value="france">франция</option>
             </select>
         </div>
         <hr>
         <div>
-            <input type="number" name="Цена от" placeholder="Цена от">
-            <input type="number" name="Цена до" placeholder="Цена до">
+            <label for="Pricef">Цена от</label>
+            <input id="Pricef" type="number" name="Pricef">
+        </div>
+        <div>
+            <label for="Priceto">Цена до</label>
+            <input id="Priceto" type="number" name="Priceto">
         </div>
         <hr>
         <div>
-            <input type="number" name="Год от" placeholder="Год от">
-            <input type="number" name="Год до" placeholder="Год до">
+            <label for="Yearf">Год от</label>
+            <input id="Yearf" type="number" name="Yearf">
+        </div>
+        <div>
+            <label for="Year">Год до</label>
+            <input id="Year" type="number" name="Year">
         </div>
         <hr>
         <div>
-            <label>Состояние</label>
-            <label for="Новая">Новая</label>
-            <input type="checkbox" name="Новая" id="Новая">
-            <label for="Битая">Битая</label>
-            <input type="checkbox" name="Битая" id="Битая">
-            <label for="Вкредите">В кредите</label>
-            <input type="checkbox" name="Кредит" id="Вкредите">
-            <label for="нерастоможенная">не растоможенная</label>
-            <input type="checkbox" name="Таможня" id="нерастоможенная">
-            <label for="Б.У.">Б.У.</label>
-            <input type="checkbox" name="Б.У." id="Б.У.">
+            <p>Состояние</p>
+            <div>
+                <label for="new">Новая</label>
+                <input type="checkbox" name="new" id="new">
+            </div>
+            <div>
+                <label for="broken">Битая</label>
+                <input type="checkbox" name="broken" id="broken">
+            </div>
+            <div>
+                <label for="credit">В кредите</label>
+                <input type="checkbox" name="credit" id="credit">
+            </div>
+            <div>
+                <label for="customs">Не растоможенная</label>
+                <input type="checkbox" name="customs" id="customs">
+            </div>
+            <div>
+                <label for="used">Б.У.</label>
+                <input type="checkbox" name="used" id="used">
+            </div>
         </div>
         <hr>
         <div>
-            <label>Тип топлива</label>
-            <label for="Бензин">Бензин</label>
-            <input type="checkbox" name="Бензин" id="Бензин">
-            <label for="Дизель">Дизель</label>
-            <input type="checkbox" name="Дизель" id="Дизель">
-            <label for="Газ">Газ</label>
-            <input type="checkbox" name="Газ" id="Газ">
-            <label for="Электро">Электро</label>
-            <input type="checkbox" name="Электро" id="Электро">
+            <p>Тип топлива</p>
+            <div>
+                <label for="gas">Бензин</label>
+                <input type="checkbox" name="petrol" id="petrol">
+            </div>
+            <div>
+                <label for="diesel">Дизель</label>
+                <input type="checkbox" name="diesel" id="diesel">
+            </div>
+            <div>
+                <label for="gas">Газ</label>
+                <input type="checkbox" name="gas" id="gas">
+            </div>
+            <div>
+                <label for="electro">Электро</label>
+                <input type="checkbox" name="electro" id="electro">
+            </div>
         </div>
         <hr>
         <div>
-            <label>Тип коробки передач</label>
-            <label for="Автомат">Автомат</label>
-            <input type="checkbox" name="Автомат" id="Автомат">
-            <label for="Ручная">Ручная</label>
-            <input type="checkbox" name="Ручная" id="Ручная">
-            <label for="Робот">Робот</label>
-            <input type="checkbox" name="Робот" id="Робот">
+            <p>Тип коробки передач</p>
+            <div>
+                <label for="automatic">Автомат</label>
+                <input type="checkbox" name="automatic" id="automatic">
+            </div>
+            <div>
+                <label for="manual">Ручная</label>
+                <input type="checkbox" name="manual" id="manual">
+            </div>
+            <div>
+                <label for="robot">Робот</label>
+                <input type="checkbox" name="robot" id="robot">
+            </div>
         </div>
         <hr>
         <div>
-            <label for="Цвет">Цвет</label>
-            <input type="color" name="цвет" id="Цвет">
+            <label for="color">Цвет</label>
+            <select id="color" name="color">
+                <option value="green">зеленый</option>
+                <option value="yellow">желтый</option>
+                <option value="black">черный</option>
+                <option value="blue">синий</option>
+                <option value="white">белый</option>
+                <option value="red">красный</option>
+                <option value="grey">серый</option>
+                <option value="orange">оранджевый</option>
+            </select>
         </div>
         <hr>
         <div>
-            <label>Комфорт</label>
-            <label for="Кондиционер">Кондиционер</label>
-            <input type="checkbox" name="Кондиционер" id="Кондиционер">
-            <label for="Люк">Люк</label>
-            <input type="checkbox" name="Люк" id="Люк">
-            <label for="Сигрализация">Сигрализация</label>
-            <input type="checkbox" name="Сигрализация" id="Сигрализация">
-        </div>
-        <hr>
+            <p>Комфорт</p>
+            <div>
+                <label for="seath">Подогрев сидения</label>
+                <input type="checkbox" name="seath" id="seath">
+            </div>
+            <div>
+                <label for="conditioner">Кондиционер</label>
+                <input type="checkbox" name="conditioner" id="conditioner">
+            </div>
+            <div>
+                <label for="sunroof">Люк</label>
+                <input type="checkbox" name="sunroof" id="sunroof">
+            </div>
+            <div>
+                <label for="signaling">Сигрализация</label>
+                <input type="checkbox" name="signaling" id="signaling">
+            </div>
 
-        <button type="submit">Отправить кудато</button>
+        </div>
+        <hr>
+        <button type="submit">Отправить</button>
         <button type="reset">Аннулировать</button>
     </form>
 
