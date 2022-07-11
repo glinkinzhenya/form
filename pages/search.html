@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>search</title>
 </head>
+
 <body>
     <h1>Поиск</h1>
     <form action="https://tests.fomenko.top/echo/index.php">
@@ -55,61 +57,88 @@
             <input id="year" type="number" name="year">
         </div>
         <div>
-            <p>Состояние</p>
-            <div>
-                <label for="new">Новая</label>
-                <input type="checkbox" name="new" id="new">
-            </div>
-            <div>
-                <label for="broken">Битая</label>
-                <input type="checkbox" name="broken" id="broken">
-            </div>
-            <div>
-                <label for="credit">В кредите</label>
-                <input type="checkbox" name="credit" id="credit">
-            </div>
-            <div>
-                <label for="customs">Не растоможенная</label>
-                <input type="checkbox" name="customs" id="customs">
-            </div>
-            <div>
-                <label for="used">Б.У.</label>
-                <input type="checkbox" name="used" id="used">
-            </div>
+            <fieldset>
+                <legend>Состояние</legend>
+                <div>
+                    <label for="new">Новая</label>
+                    <input type="checkbox" name="new" id="new">
+                </div>
+                <div>
+                    <label for="broken">Битая</label>
+                    <input type="checkbox" name="broken" id="broken">
+                </div>
+                <div>
+                    <label for="credit">В кредите</label>
+                    <input type="checkbox" name="credit" id="credit">
+                </div>
+                <div>
+                    <label for="customs">Не растоможенная</label>
+                    <input type="checkbox" name="customs" id="customs">
+                </div>
+                <div>
+                    <label for="used">Б.У.</label>
+                    <input type="checkbox" name="used" id="used">
+                </div>
+            </fieldset>
         </div>
         <div>
-            <p>Тип топлива</p>
-            <div>
-                <label for="gas">Бензин</label>
-                <input type="checkbox" name="petrol" id="petrol">
-            </div>
-            <div>
-                <label for="diesel">Дизель</label>
-                <input type="checkbox" name="diesel" id="diesel">
-            </div>
-            <div>
-                <label for="gas">Газ</label>
-                <input type="checkbox" name="gas" id="gas">
-            </div>
-            <div>
-                <label for="electro">Электро</label>
-                <input type="checkbox" name="electro" id="electro">
-            </div>
+            <fieldset>
+                <legend>Тип топлива</legend>
+                <div>
+                    <label for="gas">Бензин</label>
+                    <input type="checkbox" name="petrol" id="petrol">
+                </div>
+                <div>
+                    <label for="diesel">Дизель</label>
+                    <input type="checkbox" name="diesel" id="diesel">
+                </div>
+                <div>
+                    <label for="gas">Газ</label>
+                    <input type="checkbox" name="gas" id="gas">
+                </div>
+                <div>
+                    <label for="electro">Электро</label>
+                    <input type="checkbox" name="electro" id="electro">
+                </div>
+            </fieldset>
         </div>
         <div>
-            <p>Тип коробки передач</p>
-            <div>
-                <label for="automatic">Автомат</label>
-                <input type="checkbox" name="automatic" id="automatic">
-            </div>
-            <div>
-                <label for="manual">Ручная</label>
-                <input type="checkbox" name="manual" id="manual">
-            </div>
-            <div>
-                <label for="robot">Робот</label>
-                <input type="checkbox" name="robot" id="robot">
-            </div>
+            <fieldset>
+                <legend>Коробка передач</legend>
+                <div>
+                    <label for="automatic">Автомат</label>
+                    <input type="checkbox" name="automatic" id="automatic">
+                </div>
+                <div>
+                    <label for="manual">Ручная</label>
+                    <input type="checkbox" name="manual" id="manual">
+                </div>
+                <div>
+                    <label for="robot">Робот</label>
+                    <input type="checkbox" name="robot" id="robot">
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Комфорт</legend>
+                <div>
+                    <label for="seath">Подогрев сидения</label>
+                    <input type="checkbox" name="seath" id="seath">
+                </div>
+                <div>
+                    <label for="conditioner">Кондиционер</label>
+                    <input type="checkbox" name="conditioner" id="conditioner">
+                </div>
+                <div>
+                    <label for="sunroof">Люк</label>
+                    <input type="checkbox" name="sunroof" id="sunroof">
+                </div>
+                <div>
+                    <label for="signaling">Сигрализация</label>
+                    <input type="checkbox" name="signaling" id="signaling">
+                </div>
+            </fieldset>
         </div>
         <div>
             <label for="color">Цвет</label>
@@ -124,27 +153,9 @@
                 <option value="orange">оранджевый</option>
             </select>
         </div>
-        <div>
-            <p>Комфорт</p>
-            <div>
-                <label for="seath">Подогрев сидения</label>
-                <input type="checkbox" name="seath" id="seath">
-            </div>
-            <div>
-                <label for="conditioner">Кондиционер</label>
-                <input type="checkbox" name="conditioner" id="conditioner">
-            </div>
-            <div>
-                <label for="sunroof">Люк</label>
-                <input type="checkbox" name="sunroof" id="sunroof">
-            </div>
-            <div>
-                <label for="signaling">Сигрализация</label>
-                <input type="checkbox" name="signaling" id="signaling">
-            </div>
-        </div>
         <input type="submit">
-        <input type="reset" >
+        <input type="reset">
     </form>
 </body>
+
 </html>
