@@ -11,51 +11,58 @@
 <body>
     <h1>Поиск</h1>
     <form action="https://tests.fomenko.top/echo/index.php">
-        <div>
-            <label for="type">Тип кузова</label>
-            <select id="type" name="type">
-                <option value="sedan">седан</option>
-                <option value="coupe">купе</option>
-                <option value="hatchback">хетчбек</option>
-                <option value="cabriolet">кабриолет</option>
-            </select>
-        </div>
-        <div>
-            <label for="carb">Марка авто</label>
-            <select id="carb" name="carb">
-                <option value="porshe">porshe</option>
-                <option value="fiat">fiat</option>
-                <option value="bmv">bmv</option>
-                <option value="mercedes">mercedes</option>
-                <option value="nissan">nissan</option>
-            </select>
-        </div>
-        <div>
-            <label for="country">Страна производитель</label>
-            <select id="country" name="country">
-                <option value="ukraine">украина</option>
-                <option value="poland">польша</option>
-                <option value="america">америка</option>
-                <option value="germany">германия</option>
-                <option value="france">франция</option>
-            </select>
-        </div>
-        <div>
-            <label for="pricef">Цена от</label>
-            <input id="pricef" type="number" name="pricef">
-        </div>
-        <div>
-            <label for="priceto">Цена до</label>
-            <input id="priceto" type="number" name="priceto">
-        </div>
-        <div>
-            <label for="yearf">Год от</label>
-            <input id="yearf" type="number" name="yearf">
-        </div>
-        <div>
-            <label for="year">Год до</label>
-            <input id="year" type="number" name="year">
-        </div>
+        <fieldset>
+            <div>
+                <label for="type">Тип кузова</label>
+                <select id="type" name="type">
+                    <option value="sedan">седан</option>
+                    <option value="coupe">купе</option>
+                    <option value="hatchback">хетчбек</option>
+                    <option value="cabriolet">кабриолет</option>
+                </select>
+            </div>
+            <div>
+                <label for="carb">Марка авто</label>
+                <select id="carb" name="carb">
+                    <option value="porshe">porshe</option>
+                    <option value="fiat">fiat</option>
+                    <option value="bmv">bmv</option>
+                    <option value="mercedes">mercedes</option>
+                    <option value="nissan">nissan</option>
+                </select>
+            </div>
+            <div>
+                <label for="country">Страна производитель</label>
+                <select id="country" name="country">
+                    <option value="ukraine">украина</option>
+                    <option value="poland">польша</option>
+                    <option value="america">америка</option>
+                    <option value="germany">германия</option>
+                    <option value="france">франция</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="pricef">Цена от</label>
+                <input id="pricef" type="number" name="pricef">
+            </div>
+            <div>
+                <label for="priceto">Цена до</label>
+                <input id="priceto" type="number" name="priceto">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="yearf">Год от</label>
+                <input id="yearf" type="number" name="yearf">
+            </div>
+            <div>
+                <label for="year">Год до</label>
+                <input id="year" type="number" name="year">
+            </div>
+        </fieldset>
+
         <fieldset>
             <legend>Состояние</legend>
             <div>
@@ -132,7 +139,7 @@
                 <input type="checkbox" name="signaling" id="signaling">
             </div>
         </fieldset>
-        <div>
+        <fieldset>
             <label for="color">Цвет</label>
             <select id="color" name="color">
                 <option value="green">зеленый</option>
@@ -144,7 +151,7 @@
                 <option value="grey">серый</option>
                 <option value="orange">оранджевый</option>
             </select>
-        </div>
+        </fieldset>
         <div>
             <button type="submit">Отправить</button>
             <button type="reset">Сбросить</button>
